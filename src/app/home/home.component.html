@@ -1,0 +1,53 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">AAN Hospital</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="" routerLinkActive="active" >Home</a>
+      </li>
+      <!-- <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li> -->
+    </ul>
+    <!-- <div class="text-center ">
+      <h1>Hospital Management System</h1>
+  </div> -->
+  </div>
+</nav>
+
+
+<div class="container">
+  <div class="card border border-2 bg-light text-dark c1">
+    <div class="card-body">
+      
+      <div class="">
+        <button type="button" class="btn btn-primary border border-light"><a routerLink="create-patient" routerLinkActive="active">Register Patient</a></button>
+      </div>
+      <div class="">
+        <button type="button" class="btn btn-primary border border-light"><a routerLink="doctors" routerLinkActive="active">Doctors Information</a></button>
+      </div>
+      <div class="">
+        <button type="button" class="btn btn-primary border border-light"><a routerLink="patient-details" routerLinkActive="active">Patient Information</a></button>
+      </div>
+      <router-outlet></router-outlet>  
+    </div>
+  </div>
+  
+  <div class="card c2">
+    <div class="card-body">
+
+    </div>
+  </div>
+    
+</div>
+
+
+<div class="footer">
+  <div class="container">
+    <span>Anoop A Nair &copy; 2022</span>
+  </div>
+</div>

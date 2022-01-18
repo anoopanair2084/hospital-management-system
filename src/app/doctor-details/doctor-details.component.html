@@ -1,0 +1,49 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">AAN Hospital</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="" >Home</a>
+      </li>
+      <!-- <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li> -->
+    </ul>
+  </div>
+</nav>
+
+<div  ngbDropdown class="dropdown ">
+  <label for="dropdownMenuButton1">Choose Doctor</label><br>
+  <button class="btn btn-secondary dropdown-toggle btn1 border border-4" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" ngbDropdownToggle>
+    <span class="highlight" *ngIf="selected; else notSelected">{{select}}</span>
+    <ng-template #notSelected>{{select}}</ng-template>
+  </button>
+  <ul ngbDropdownMenu class="dropdown-menu btn1" aria-labelledby="dropdownMenuButton1">
+    <li *ngFor="let doctor of doctors"><a class="dropdown-item" (click)="selectDoctor(doctor)">{{doctor.name}}</a></li>
+  </ul>
+</div>
+<div class="container">
+  <div class="card border border-4 shadow p-3 mb-5 bg-body rounded">
+    <div class="card-body ">
+      <div class="field" >
+        <h4>Name: </h4><span class="highlight text-success" *ngIf="selected">{{doctorDetails.name}}</span>
+      </div>
+      <div class="field">
+        <h4>Field:</h4><span class="highlight text-success" *ngIf="selected">{{doctorDetails.field}}</span>
+      </div>
+      <div class="field">
+        <h4>No. of Patients Attended:</h4><span class="highlight text-success" *ngIf="selected">{{patients}}</span>
+      </div> 
+    </div>
+  </div>
+  
+</div>
+<div class="footer">
+  <div class="container">
+    <span>Anoop A Nair &copy; 2022</span>
+  </div>
+</div>

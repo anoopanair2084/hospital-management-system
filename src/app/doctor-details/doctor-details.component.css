@@ -1,0 +1,72 @@
+.navbar{
+    margin-top: 20px;
+    margin-left: -95px;
+    width: 106em;
+    height: 5em;
+}
+
+.navbar-brand{
+    padding-left: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.nav-link{
+    font-size: 18px;
+}
+
+.dropdown{
+    margin-top: 50px;
+    margin-left: 15px;
+}
+
+label{
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.btn1{
+    background-color: #fff;
+    width: 250px;
+    color: #000;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+.field{
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+h4{
+    display: inline-block;
+    margin-bottom: 15px;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 22px;
+}
+
+.highlight{
+    font-size: 20px;
+    padding-left: 10px;
+    width: 20px;
+}
+.footer{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 230px;
+    font-weight: bold;
+}
+
+.card{
+    width: 35rem;
+    height: 15rem;
+
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,61 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">AAN Hospital</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="" >Home</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li> -->
+      </ul>
+    </div>
+  </nav>
+  
+<div class="container">
+    <form (ngSubmit)="onSubmit()" class="search">
+        <input id = "name" class="form-control" type="search" [(ngModel)]="id" name="name" placeholder="Enter Patient ID" aria-label="Search">
+        <button class="btn btn-outline-success " type="submit">Search</button>
+    </form>
+       
+</div>
+
+<div class="card border border-4 shadow p-3 mb-5 bg-body rounded">
+  <div class="card-body ">
+    <div class="container" *ngIf="selected && errorMessage">
+      <h4 class="text-danger">
+        {{errorMessage}}
+      </h4>
+    </div>
+    <div class="details" *ngIf="selected && !errorMessage">
+      <div class="field" >
+        <h4>Patient Name: </h4><span class="highlight text-success">{{patient.name}}</span>
+      </div>
+      <div class="field" >
+        <h4>Patient Age: </h4><span class="highlight text-success">{{patient.age}}</span>
+      </div>
+      <div class="field">
+        <h4>Date of Visit:</h4><span class="highlight text-success">{{patient.dateOfVisit | date}}</span>
+      </div>
+      <div class="field">
+        <h4>Doctor:</h4><span class="highlight text-success">{{doctor.name}}</span>
+      </div>
+      <div class="field">
+        <h4>Field:</h4><span class="highlight text-success">{{doctor.field}}</span>
+      </div>
+      <div class="field">
+        <h4>Prescription:</h4><span class="highlight text-success">{{doctor.prescription}}</span>
+      </div>
+    </div> 
+  </div>
+</div>
+
+<div class="footer">
+  <div class="container">
+    <span>Anoop A Nair &copy; 2022</span>
+  </div>
+</div>

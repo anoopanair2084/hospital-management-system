@@ -1,0 +1,75 @@
+
+.container{
+    display: flex;
+    margin-top: 100px;
+    height: 3rem;
+    margin-left: -10px;
+}
+
+.search{
+    display: flex;
+    flex-direction: row;
+    width: 20rem;
+}
+
+.navbar{
+    margin-top: 20px;
+    margin-left: -95px;
+    width: 106em;
+    height: 5em;
+}
+
+.navbar-brand{
+    padding-left: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.nav-link{
+    font-size: 18px;
+}
+
+.details{
+    margin-top: 10px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.field{
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+h4{
+    display: inline-block;
+    margin-bottom: 15px;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 22px;
+}
+
+.highlight{
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.footer{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 480px;
+    margin-left: 550px;
+    font-weight: bold;
+}
+
+.card{
+    margin-top: 5rem;
+    width: 35rem;
+    height: 24rem;
+
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+}
